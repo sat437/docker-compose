@@ -2,7 +2,7 @@ version: '2'
 x-restart-policy: &restart-policy "no"
 services:
   dns:
-    image: lancachenet/lancache-dns:latest
+    image: lancache/lancache-dns:latest
     env_file: .env
     restart: *restart-policy
     ports:
